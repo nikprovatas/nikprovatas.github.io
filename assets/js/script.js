@@ -1,213 +1,84 @@
-'use strict';
+(function ($) {
+    'use strict';
 
+    // Spinner
+    setTimeout(function () {
+        if ($('#spinner').length > 0) {
+            $('#spinner').removeClass('show');
+        }
+    }, 1);
 
+    // Initiate WOW.js
+    new WOW().init();
 
-// element toggle function
-const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
+    // Counter Up
+    $('[data-toggle="counter-up"]').counterUp({
+        delay: 10,
+        time: 2000
+    });
 
-
-
-// sidebar variables
-const sidebar = document.querySelector("[data-sidebar]");
-const sidebarBtn = document.querySelector("[data-sidebar-btn]");
-
-// sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
-
-
-
-// testimonials variables
-const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
-const modalContainer = document.querySelector("[data-modal-container]");
-const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-const overlay = document.querySelector("[data-overlay]");
-
-// modal variable
-const modalImg = document.querySelector("[data-modal-img]");
-const modalTitle = document.querySelector("[data-modal-title]");
-const modalText = document.querySelector("[data-modal-text]");
-
-// modal toggle function
-const testimonialsModalFunc = function () {
-  modalContainer.classList.toggle("active");
-  overlay.classList.toggle("active");
-}
-
-// add click event to all modal items
-for (let i = 0; i < testimonialsItem.length; i++) {
-
-  testimonialsItem[i].addEventListener("click", function () {
-
-    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
-
-    testimonialsModalFunc();
-
-  });
-
-}
-
-// add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
-
-
-
-// custom select variables
-const select = document.querySelector("[data-select]");
-const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
-
-select.addEventListener("click", function () { elementToggleFunc(this); });
-
-// add event in all select items
-for (let i = 0; i < selectItems.length; i++) {
-  selectItems[i].addEventListener("click", function () {
-
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    elementToggleFunc(select);
-    filterFunc(selectedValue);
-
-  });
-}
-
-// filter variables
-const filterItems = document.querySelectorAll("[data-filter-item]");
-
-const filterFunc = function (selectedValue) {
-
-  for (let i = 0; i < filterItems.length; i++) {
-
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
-    } else {
-      filterItems[i].classList.remove("active");
+    // Typed.js
+    if ($('.typed-text-output').length === 1) {
+        var typedStrings = $('.typed-text').text();
+        new Typed('.typed-text-output', {
+            strings: typedStrings.split(', '),
+            typeSpeed: 100,
+            backSpeed: 20,
+            smartBackspace: false,
+            loop: true
+        });
     }
 
-  }
+    // Skill progress bars — animate when scrolled into view
+    $('.skill').waypoint(function () {
+        $('.progress .progress-bar').each(function () {
+            $(this).css('width', $(this).attr('aria-valuenow') + '%');
+        });
+    }, { offset: '80%' });
 
-}
+    // Research isotope filter
+    var $researchContainer = $('.research-container');
 
-// add event in all filter button items for large screen
-let lastClickedBtn = filterBtn[0];
+    if ($researchContainer.length) {
+        var researchIsotope = $researchContainer.isotope({
+            itemSelector: '.research-item',
+            layoutMode: 'fitRows'
+        });
 
-for (let i = 0; i < filterBtn.length; i++) {
-
-  filterBtn[i].addEventListener("click", function () {
-
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    filterFunc(selectedValue);
-
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
-    lastClickedBtn = this;
-
-  });
-
-}
-
-
-
-// contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
-
-// add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
-
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
+        $('#research-filters li').on('click', function () {
+            $('#research-filters li').removeClass('active');
+            $(this).addClass('active');
+            var filterValue = $(this).data('filter');
+            researchIsotope.isotope({ filter: filterValue });
+        });
     }
 
-  });
-}
-
-
-
-// page navigation variables
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
-
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
-
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
+    // Research modal — populate on card click
+    var researchModal = document.getElementById('researchModal');
+    if (researchModal) {
+        researchModal.addEventListener('show.bs.modal', function (event) {
+            var card = event.relatedTarget;
+            document.getElementById('researchModalLabel').textContent = card.getAttribute('data-title') || '';
+            document.getElementById('modal-authors').textContent = card.getAttribute('data-authors') || '';
+            document.getElementById('modal-venue').textContent = card.getAttribute('data-venue') || '';
+            document.getElementById('modal-abstract').textContent = card.getAttribute('data-abstract') || '';
+            var url = card.getAttribute('data-url') || '#';
+            document.getElementById('modal-download').href = url;
+        });
     }
 
-  });
-}
+    // Back to top button
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('slow');
+        }
+    });
 
+    $('.back-to-top').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
+        return false;
+    });
 
-// Get the modal
-var modal = document.getElementById("myModal");
-
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-const researchItem = document.querySelectorAll("[data-research-item]");
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-
-// modal variable
-const myModalTitle = document.querySelector("[data-mymodal-title]");
-const myModalAuthor = document.querySelector("[data-mymodal-author]");
-const myModalType = document.querySelector("[data-mymodal-type]");
-const myModalAbstract = document.querySelector("[data-mymodal-abstract]");
-const myModalURL = document.querySelector("[data-mymodal-url]");
-
-// modal toggle function
-const researchModalFunc = function () {
-  modal.style.display = "block";
-}
-
-// add click event to all modal items
-for (let i = 0; i < researchItem.length; i++) {
-
-  researchItem[i].addEventListener("click", function () {
-
-    myModalTitle.innerHTML = this.querySelector("[data-research-title]").innerHTML;
-    myModalAuthor.innerHTML = this.querySelector("[data-research-author]").innerHTML;
-	myModalType.innerHTML = this.querySelector("[data-research-type]").innerHTML;
-	myModalAbstract.innerHTML = this.querySelector("[data-research-abstract]").innerHTML;
-	myModalURL.href = this.querySelector("[data-research-url]").innerHTML;
-
-    researchModalFunc();
-
-  });
-
-}
-
-
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+})(jQuery);
