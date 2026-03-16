@@ -1,0 +1,80 @@
+/* ===== Custom additions on top of DarkCV template ===== */
+
+/* Sidebar contact info block */
+.sidebar-contact {
+    font-size: 0.85rem;
+}
+
+/* Research interest icon boxes — reuse service-item but smaller */
+.interest-box {
+    padding: 20px 10px;
+}
+
+/* EU project logos */
+.project-logo {
+    height: 60px;
+    object-fit: contain;
+    filter: brightness(0.85);
+    transition: filter 0.3s;
+}
+.project-logo:hover {
+    filter: brightness(1.2);
+}
+
+/* Projects carousel */
+.project-carousel-item {
+    background-color: var(--secondary);
+    border-radius: 4px;
+    padding: 28px 20px;
+    transition: transform 0.3s ease;
+}
+.project-carousel-item:hover {
+    transform: translateY(-4px);
+}
+.project-carousel .owl-dots {
+    margin-top: 20px;
+    text-align: center;
+}
+.project-carousel .owl-dot span {
+    background: var(--secondary) !important;
+    border: 2px solid var(--primary) !important;
+}
+.project-carousel .owl-dot.active span {
+    background: var(--primary) !important;
+}
+
+/* Research cards */
+.research-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, border-left 0.3s ease;
+    border-left: 3px solid transparent;
+}
+
+.research-card:hover {
+    transform: translateY(-4px);
+    border-left-color: var(--primary);
+}
+
+.research-logo {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+/* Research filter active state */
+#research-filters li.active {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+
+/* Badge colors (Bootstrap 4 uses badge-* not bg-*) */
+.badge-primary {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.badge-warning {
+    background-color: #f0a500;
+    color: #fff;
+}
