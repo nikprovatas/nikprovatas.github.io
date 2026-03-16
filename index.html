@@ -194,7 +194,7 @@
                     <!-- About End -->
 
                     <!-- ===== SKILLS ===== -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                    <section class="py-5 border-bottom wow fadeInUp d-none" data-wow-delay="0.1s">
                         <h1 class="title pb-3 mb-5">Skills</h1>
                         <div class="row">
                             <div class="col-sm-6">
@@ -390,8 +390,11 @@
                                 <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
                                 <h5 class="mb-1">Ph.D. — Distributed Deep Learning</h5>
                                 <p class="mb-2">National Technical University of Athens | <small>2017 — 2025</small></p>
-                                <p class="mb-1"><strong>Thesis:</strong> Study and optimization of distributed deep learning under the parameter server architecture.</p>
+                                <p class="mb-1"><strong>Thesis:</strong> Study and Optimization of Distributed Deep Learning under the Parameter Server Architecture.</p>
                                 <p class="mb-1">10 peer-reviewed publications.</p>
+                                <a class="text-primary" href="https://www.didaktorika.gr/eadd/handle/10442/60025?locale=en" target="_blank">
+                                    View Dissertation <i class="fas fa-external-link-alt ms-1"></i>
+                                </a>
                             </div>
 
                             <!-- MSc Data Science -->
@@ -430,6 +433,9 @@
                                 <ul class="list-inline mb-4" id="research-filters">
                                     <li class="btn btn-secondary active me-1 mb-2" data-filter="*">
                                         <i class="fa fa-star me-2"></i>All
+                                    </li>
+                                    <li class="btn btn-secondary me-1 mb-2" data-filter=".phd">
+                                        <i class="fa fa-flask me-2"></i>PhD
                                     </li>
                                     <li class="btn btn-secondary me-1 mb-2" data-filter=".thesis">
                                         <i class="fa fa-graduation-cap me-2"></i>Thesis
@@ -572,6 +578,82 @@
                                     <h6 class="mb-2">BigOptiBase: Big Data Analytics for Base Station Energy Consumption Optimization</h6>
                                     <p class="text-primary small mb-1">E. Kassela, N. Provatas, I. Konstantinou, N. Koziris</p>
                                     <p class="small mb-0"><em>2019 IEEE International Conference on Big Data</em></p>
+                                </div>
+                            </div>
+
+                            <!-- Publication 8 -->
+                            <div class="col-md-6 mb-4 research-item publications">
+                                <div class="research-card p-4 bg-secondary h-100"
+                                    data-toggle="modal" data-target="#researchModal"
+                                    data-title="A Survey on Parameter Server Architecture: Approaches for Optimizing Distributed Centralized Learning"
+                                    data-authors="N. Provatas, I. Konstantinou, N. Koziris"
+                                    data-venue="IEEE Access, 2025"
+                                    data-abstract="Deep learning has emerged as a cornerstone technology across various domains, from image classification to natural language processing. This survey explores distributed deep learning systems through the lens of the parameter server architecture, analyzing five key research areas: consistency control, network optimization, parameter management, straggler handling, and fault tolerance. The work aims to serve as a foundational resource for researchers and practitioners striving to enhance the performance and scalability of distributed deep learning systems."
+                                    data-url="https://ieeexplore.ieee.org/abstract/document/10855445">
+                                    <div class="d-flex align-items-start mb-2">
+                                        <img src="assets/images/ntua.png" alt="NTUA" class="research-logo me-2">
+                                        <span class="badge badge-primary">Publication</span>
+                                    </div>
+                                    <h6 class="mb-2">A Survey on Parameter Server Architecture: Approaches for Optimizing Distributed Centralized Learning</h6>
+                                    <p class="text-primary small mb-1">N. Provatas, I. Konstantinou, N. Koziris</p>
+                                    <p class="small mb-0"><em>IEEE Access, 2025</em></p>
+                                </div>
+                            </div>
+
+                            <!-- Publication 9 -->
+                            <div class="col-md-6 mb-4 research-item publications">
+                                <div class="research-card p-4 bg-secondary h-100"
+                                    data-toggle="modal" data-target="#researchModal"
+                                    data-title="Strategy-Switch: From All-Reduce to Parameter Server for Faster Efficient Training"
+                                    data-authors="N. Provatas, I. Chalas, I. Konstantinou, N. Koziris"
+                                    data-venue="IEEE Access, 2025"
+                                    data-abstract="This paper proposes a hybrid distributed training methodology that initiates training under the All-Reduce system and, guided by an empirical rule, transitions to asynchronous Parameter Server training once model convergence occurs. The approach combines the synchronization benefits of all-reduce algorithms with the speed advantages of parameter server architectures, achieving comparable accuracy to All-Reduce training but with significantly accelerated overall training time."
+                                    data-url="https://ieeexplore.ieee.org/abstract/document/10836684">
+                                    <div class="d-flex align-items-start mb-2">
+                                        <img src="assets/images/ntua.png" alt="NTUA" class="research-logo me-2">
+                                        <span class="badge badge-primary">Publication</span>
+                                    </div>
+                                    <h6 class="mb-2">Strategy-Switch: From All-Reduce to Parameter Server for Faster Efficient Training</h6>
+                                    <p class="text-primary small mb-1">N. Provatas, I. Chalas, I. Konstantinou, N. Koziris</p>
+                                    <p class="small mb-0"><em>IEEE Access, 2025</em></p>
+                                </div>
+                            </div>
+
+                            <!-- Publication 10 -->
+                            <div class="col-md-6 mb-4 research-item publications">
+                                <div class="research-card p-4 bg-secondary h-100"
+                                    data-toggle="modal" data-target="#researchModal"
+                                    data-title="IW-NET BDA: A Big Data Infrastructure for Predictive and Geotemporal Analytics of Inland Waterways"
+                                    data-authors="N. Chalvantzis, A. Vontzalidis, E. Kassela, A. Spyrou, N. Nikitas, N. Provatas, I. Konstantinou, N. Koziris"
+                                    data-venue="IEEE Access, 2024"
+                                    data-abstract="This paper presents a big-data analytics framework designed for the logistics sector, addressing storage and processing requirements for large datasets from multiple sources including fleet IoT data and transactional documents. The framework caters to the logistics domain but offers a versatile IT service backbone due to its agnostic design. The work demonstrates two use cases: automated detection of vessel activity along the River Weser corridor and recurrent neural network forecasting of water levels in the Danube River corridor."
+                                    data-url="https://ieeexplore.ieee.org/abstract/document/10496108">
+                                    <div class="d-flex align-items-start mb-2">
+                                        <img src="assets/images/ntua.png" alt="NTUA" class="research-logo me-2">
+                                        <span class="badge badge-primary">Publication</span>
+                                    </div>
+                                    <h6 class="mb-2">IW-NET BDA: A Big Data Infrastructure for Predictive and Geotemporal Analytics of Inland Waterways</h6>
+                                    <p class="text-primary small mb-1">N. Chalvantzis, A. Vontzalidis, E. Kassela et al.</p>
+                                    <p class="small mb-0"><em>IEEE Access, 2024</em></p>
+                                </div>
+                            </div>
+
+                            <!-- PhD -->
+                            <div class="col-md-6 mb-4 research-item phd">
+                                <div class="research-card p-4 bg-secondary h-100"
+                                    data-toggle="modal" data-target="#researchModal"
+                                    data-title="Study and Optimization of Distributed Deep Learning under the Parameter Server Architecture"
+                                    data-authors="N. Provatas"
+                                    data-venue="Ph.D. Dissertation, NTUA, 2025"
+                                    data-abstract="This dissertation examines asynchronous training within parameter server frameworks, emphasizing performance and stability improvements. The research demonstrates that specialized distributed systems outperform general-purpose frameworks at scale. Key contributions include identifying consistency control and stale gradient mitigation as pivotal challenges, introducing a hybrid Strategy-Switch approach that transitions from synchronous to asynchronous updates, and proposing offline data-sharding techniques. Experimental findings indicate these methods reduce training variability by up to eightfold compared to random distribution approaches, advancing scalable neural network training methods."
+                                    data-url="https://www.didaktorika.gr/eadd/handle/10442/60025?locale=en">
+                                    <div class="d-flex align-items-start mb-2">
+                                        <img src="assets/images/ntua.png" alt="NTUA" class="research-logo me-2">
+                                        <span class="badge badge-warning">PhD</span>
+                                    </div>
+                                    <h6 class="mb-2">Study and Optimization of Distributed Deep Learning under the Parameter Server Architecture</h6>
+                                    <p class="text-primary small mb-1">N. Provatas</p>
+                                    <p class="small mb-0"><em>Ph.D. Dissertation, NTUA, 2025</em></p>
                                 </div>
                             </div>
 
