@@ -1,725 +1,660 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Nikodimos Provatas - Personal/CV Webpage</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Nikodimos Provatas, Greece, National Technical University of Athens, Machine Learning, Deep Learning, Big Data" name="keywords">
+        <meta content="Personal CV webpage of Nikodimos Provatas, ML/Big Data Engineer and PhD Candidate at NTUA." name="description">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Nikodimos Provatas, Greece, National Technical University of Athens, Machine Learning, Deep Learning, Big Data">
-    <title>Nikodimos Provatas - Personal/CV Webpage</title>
+        <!-- Favicon -->
+        <link href="assets/images/logo.ico" rel="icon">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Icon Font Stylesheets -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
 
-    <!-- Icon Font Stylesheets -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
+        <!-- Libraries Stylesheet -->
+        <link href="DarkCV/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="DarkCV/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="DarkCV/lib/animate/animate.min.css" rel="stylesheet">
 
-    <!-- Animate CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+        <!-- Customized Bootstrap Stylesheet (dark theme) -->
+        <link href="DarkCV/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Template Stylesheet -->
+        <link href="DarkCV/css/style.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="./assets/css/style.css" rel="stylesheet">
-</head>
+        <!-- Custom additions -->
+        <link href="assets/css/custom.css" rel="stylesheet">
+    </head>
 
-<body>
-
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="visually-hidden">Loading...</span>
-        </div>
-    </div>
-    <!-- Spinner End -->
-
-    <div class="container-fluid p-0">
-        <div class="row g-0">
-
-            <!-- Sidebar Start -->
-            <div class="col-lg-4 sticky-lg-top vh-100">
-                <div class="d-flex flex-column h-100 text-center overflow-auto sidebar-bg shadow">
-                    <img class="w-100 img-fluid" src="./assets/images/profile.jpg" alt="Nikodimos Provatas">
-                    <h1 class="text-primary mt-3 mb-1 px-3">Nikodimos Provatas</h1>
-                    <div class="mb-3" style="height: 26px;">
-                        <h5 class="typed-text-output d-inline-block text-light"></h5><span class="typed-cursor text-light">|</span>
-                        <div class="typed-text d-none">Big Data Engineer, ML Engineer, PhD Researcher</div>
-                    </div>
-
-                    <!-- Contact Info -->
-                    <div class="px-4 mb-3 text-start">
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="bi bi-envelope text-primary me-2 flex-shrink-0"></i>
-                            <small class="text-light text-break">nprov@cslab.ece.ntua.gr</small>
-                        </div>
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="bi bi-geo-alt text-primary me-2 flex-shrink-0"></i>
-                            <small class="text-light">Athens, Greece</small>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-calendar text-primary me-2 flex-shrink-0"></i>
-                            <small class="text-light">June 01, 1993</small>
-                        </div>
-                    </div>
-
-                    <!-- Social Links -->
-                    <div class="d-flex justify-content-center mt-auto mb-3">
-                        <a class="btn btn-secondary btn-square mx-1" href="https://www.linkedin.com/in/nikodimos-provatas-490161123/" target="_blank" title="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a class="btn btn-secondary btn-square mx-1" href="https://scholar.google.com/citations?user=80Cef_oAAAAJ&hl=en" target="_blank" title="Google Scholar">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </div>
-
-                    <!-- Download CV -->
-                    <div class="border-top">
-                        <a href="./assets/images/diploma_msc.png" class="btn w-100 py-2 text-light">Download CV</a>
-                    </div>
-                </div>
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
             </div>
-            <!-- Sidebar End -->
+        </div>
+        <!-- Spinner End -->
 
-            <!-- Main Content Start -->
-            <div class="col-lg-8 main-content">
+        <div class="container">
+            <div class="row g-5">
 
-                <!-- About Start -->
-                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="about">
-                    <h1 class="title pb-3 mb-5">About Me</h1>
-                    <p class="text-light mb-4">
-                        I am a machine learning and big data engineer at the Institute of Communication and Computing
-                        Systems (ICCS), located in the National Technical University of Athens (NTUA). I am also a PhD
-                        Candidate at the Computing Systems Laboratory (CSLab) of the School of Electrical and Computer
-                        Engineering NTUA. My research interests include big data, distributed systems, deep learning and
-                        data management.
-                    </p>
-                    <div class="row mb-4">
-                        <div class="col-sm-6 py-1">
-                            <span class="fw-medium text-primary">Name:</span>
-                            <span class="text-light"> Nikodimos Provatas</span>
+                <!-- ===== SIDEBAR ===== -->
+                <div class="col-lg-4 sticky-lg-top vh-100">
+                    <div class="d-flex flex-column h-100 text-center overflow-auto shadow">
+                        <img class="w-100 img-fluid mb-4" src="assets/images/profile.jpg" alt="Nikodimos Provatas">
+                        <h1 class="text-primary mt-2">Nikodimos Provatas</h1>
+                        <div class="mb-3" style="height: 22px;">
+                            <h4 class="typed-text-output d-inline-block text-light"></h4>
+                            <div class="typed-text d-none">Big Data Engineer, ML Engineer, PhD Researcher</div>
                         </div>
-                        <div class="col-sm-6 py-1">
-                            <span class="fw-medium text-primary">Birthday:</span>
-                            <span class="text-light"> June 01, 1993</span>
-                        </div>
-                        <div class="col-sm-6 py-1">
-                            <span class="fw-medium text-primary">Degree:</span>
-                            <span class="text-light"> M.Sc. Data Science &amp; ML / M.Eng. ECE</span>
-                        </div>
-                        <div class="col-sm-6 py-1">
-                            <span class="fw-medium text-primary">Experience:</span>
-                            <span class="text-light"> 9+ Years</span>
-                        </div>
-                        <div class="col-sm-6 py-1">
-                            <span class="fw-medium text-primary">Email:</span>
-                            <span class="text-light"> nprov@cslab.ece.ntua.gr</span>
-                        </div>
-                        <div class="col-sm-6 py-1">
-                            <span class="fw-medium text-primary">Location:</span>
-                            <span class="text-light"> Athens, Greece</span>
-                        </div>
-                    </div>
 
-                    <!-- Stats Counters -->
-                    <div class="row g-4 mb-5">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="d-flex bg-secondary p-4">
-                                <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">9</h1>
-                                <div class="ps-3">
-                                    <p class="mb-0 text-light">Years of</p>
-                                    <h5 class="mb-0 text-light">Experience</h5>
-                                </div>
+                        <!-- Contact info below typed text -->
+                        <div class="sidebar-contact px-3 mb-3 text-start">
+                            <div class="d-flex align-items-center mb-1">
+                                <i class="bi bi-envelope text-primary me-2"></i>
+                                <small class="text-light">nprov@cslab.ece.ntua.gr</small>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="d-flex bg-secondary p-4">
-                                <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">7</h1>
-                                <div class="ps-3">
-                                    <p class="mb-0 text-light">Research</p>
-                                    <h5 class="mb-0 text-light">Publications</h5>
-                                </div>
+                            <div class="d-flex align-items-center mb-1">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <small class="text-light">Athens, Greece</small>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="d-flex bg-secondary p-4">
-                                <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">3</h1>
-                                <div class="ps-3">
-                                    <p class="mb-0 text-light">EU/Greek</p>
-                                    <h5 class="mb-0 text-light">Projects</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Research Interests -->
-                    <h4 class="text-light mb-4">Research Interests</h4>
-                    <div class="row g-4 mb-5">
-                        <div class="col-6 col-md-3">
-                            <div class="interest-item text-center p-3 bg-secondary h-100">
-                                <img src="./assets/images/icons8-big-data-50.png" alt="Big Data" width="40" class="mb-2">
-                                <p class="mb-0 text-light small">Big Data</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <div class="interest-item text-center p-3 bg-secondary h-100">
-                                <img src="./assets/images/icons8-deep-learning-64.png" alt="Deep Learning" width="40" class="mb-2">
-                                <p class="mb-0 text-light small">Deep Learning</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <div class="interest-item text-center p-3 bg-secondary h-100">
-                                <img src="./assets/images/icons8-distributed-60.png" alt="Distributed Systems" width="40" class="mb-2">
-                                <p class="mb-0 text-light small">Distributed Systems</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <div class="interest-item text-center p-3 bg-secondary h-100">
-                                <img src="./assets/images/icons8-coding-64.png" alt="Software Engineering" width="40" class="mb-2">
-                                <p class="mb-0 text-light small">Software Engineering</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- EU Projects -->
-                    <h4 class="text-light mb-4">European &amp; Greek Funded Projects</h4>
-                    <div class="d-flex flex-wrap align-items-center">
-                        <a href="http://www.datasource.gr/" target="_blank" class="me-4 mb-3">
-                            <img src="./assets/images/datasource.png" alt="DataSource" style="height:50px; object-fit:contain;">
-                        </a>
-                        <a href="http://www.bigoptibase.gr/" target="_blank" class="me-4 mb-3">
-                            <img src="./assets/images/bigoptibase.png" alt="BigOptiBase" style="height:50px; object-fit:contain;">
-                        </a>
-                        <a href="https://selisproject.eu/" target="_blank" class="me-4 mb-3">
-                            <img src="./assets/images/selis.png" alt="SELIS" style="height:50px; object-fit:contain;">
-                        </a>
-                    </div>
-                </section>
-                <!-- About End -->
-
-                <!-- Skills Start -->
-                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="skills">
-                    <h1 class="title pb-3 mb-5">Skills</h1>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <h6 class="text-primary mb-3">Programming Languages</h6>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2 text-light">Python</p>
-                                    <p class="mb-2 text-light">100%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2 text-light">Java</p>
-                                    <p class="mb-2 text-light">100%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2 text-light">Bash</p>
-                                    <p class="mb-2 text-light">90%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2 text-light">R</p>
-                                    <p class="mb-2 text-light">80%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-5">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2 text-light">C / C++</p>
-                                    <p class="mb-2 text-light">70%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
-                            <h6 class="text-primary mb-3">DevOps &amp; Tools</h6>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2 text-light">Git</p>
-                                    <p class="mb-2 text-light">100%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2 text-light">Docker / Docker-Compose</p>
-                                    <p class="mb-2 text-light">90%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2 text-light">Kubernetes</p>
-                                    <p class="mb-2 text-light">40%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <h6 class="text-primary mb-3">ML / Python Libraries</h6>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2 text-light">NumPy / Pandas / Dask</p>
-                                    <p class="mb-2 text-light">100%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2 text-light">Matplotlib / Seaborn</p>
-                                    <p class="mb-2 text-light">100%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2 text-light">Scikit-Learn</p>
-                                    <p class="mb-2 text-light">100%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2 text-light">TensorFlow</p>
-                                    <p class="mb-2 text-light">90%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2 text-light">Flask</p>
-                                    <p class="mb-2 text-light">80%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-5">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2 text-light">PyTorch</p>
-                                    <p class="mb-2 text-light">60%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
-                            <h6 class="text-primary mb-3">Big Data &amp; Databases</h6>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2 text-light">Apache Spark (SQL/ML)</p>
-                                    <p class="mb-2 text-light">100%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2 text-light">Apache HDFS</p>
-                                    <p class="mb-2 text-light">100%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2 text-light">PostgreSQL</p>
-                                    <p class="mb-2 text-light">100%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2 text-light">Apache Superset</p>
-                                    <p class="mb-2 text-light">90%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Skills End -->
-
-                <!-- Experience Start -->
-                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="experience">
-                    <h1 class="title pb-3 mb-5">Experience</h1>
-                    <div class="border-start border-2 border-primary pt-2 ps-5">
-                        <div class="position-relative mb-5">
-                            <span class="bi bi-arrow-right fs-4 text-primary position-absolute" style="top: -5px; left: -50px;"></span>
-                            <h5 class="mb-1 text-light">Big Data and Machine Learning Engineer</h5>
-                            <p class="mb-2 text-primary">Institute of Communication and Computing Systems (ICCS), NTUA | <small class="text-light">Oct. 2016 — Present</small></p>
-                            <p class="text-light">Technologies used: Apache Spark, HDFS, TensorFlow, Apache Superset, Docker, Docker-Compose.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <span class="bi bi-arrow-right fs-4 text-primary position-absolute" style="top: -5px; left: -50px;"></span>
-                            <h5 class="mb-1 text-light">Software Engineer Intern</h5>
-                            <p class="mb-2 text-primary">Suntech | <small class="text-light">May 2016 — July 2016</small></p>
-                            <p class="text-light">C# Backend Software Engineer using MVC modelling.</p>
-                        </div>
-                    </div>
-                </section>
-                <!-- Experience End -->
-
-                <!-- Education Start -->
-                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="education">
-                    <h1 class="title pb-3 mb-5">Education</h1>
-                    <div class="border-start border-2 border-primary pt-2 ps-5">
-                        <div class="position-relative mb-5">
-                            <span class="bi bi-arrow-right fs-4 text-primary position-absolute" style="top: -5px; left: -50px;"></span>
-                            <h5 class="mb-1 text-light">PhD Candidate, Computing Systems Laboratory</h5>
-                            <p class="mb-2 text-primary">National Technical University of Athens | <small class="text-light">2016 — Present</small></p>
-                            <p class="text-light">Researching training neural networks with big data under asynchronous parameter server.</p>
-                        </div>
-                        <div class="position-relative mb-5">
-                            <span class="bi bi-arrow-right fs-4 text-primary position-absolute" style="top: -5px; left: -50px;"></span>
-                            <h5 class="mb-1 text-light">M.Sc. — Data Science and Machine Learning</h5>
-                            <p class="mb-2 text-primary">National Technical University of Athens | <small class="text-light">2018 — 2020</small></p>
-                            <p class="text-light mb-1"><strong class="text-primary">Grade:</strong> 9.44/10</p>
-                            <p class="text-light mb-1"><strong class="text-primary">Thesis:</strong> Techniques for exploiting data distribution in neural network training.</p>
-                            <a class="text-primary" href="https://dspace.lib.ntua.gr/xmlui/bitstream/handle/123456789/52744/main.pdf?sequence=1&isAllowed=y" target="_blank">
-                                Download in Greek <i class="fas fa-file-pdf ms-1"></i>
-                            </a>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <span class="bi bi-arrow-right fs-4 text-primary position-absolute" style="top: -5px; left: -50px;"></span>
-                            <h5 class="mb-1 text-light">M.Eng. — Electrical and Computer Engineering</h5>
-                            <p class="mb-2 text-primary">National Technical University of Athens | <small class="text-light">2011 — 2016</small></p>
-                            <p class="text-light mb-1"><strong class="text-primary">Grade:</strong> 8.78/10</p>
-                            <p class="text-light mb-1"><strong class="text-primary">Thesis:</strong> Deterministic and heuristic algorithms for designing and optimizing workflows on multiple machines on the cloud.</p>
-                            <a class="text-primary" href="https://dspace.lib.ntua.gr/xmlui/bitstream/handle/123456789/52744/main.pdf?sequence=1&isAllowed=y" target="_blank">
-                                Download in Greek <i class="fas fa-file-pdf ms-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-                <!-- Education End -->
-
-                <!-- Research Start -->
-                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="research">
-                    <h1 class="title pb-3 mb-5">Research</h1>
-                    <div class="row">
-                        <div class="col-12 text-center mb-4">
-                            <ul class="list-inline mb-0" id="research-filters">
-                                <li class="btn btn-secondary active me-2 mb-2" data-filter="*">
-                                    <i class="fa fa-star me-1"></i>All
-                                </li>
-                                <li class="btn btn-secondary me-2 mb-2" data-filter=".thesis">
-                                    <i class="fa fa-graduation-cap me-1"></i>Thesis
-                                </li>
-                                <li class="btn btn-secondary mb-2" data-filter=".publications">
-                                    <i class="fa fa-file-alt me-1"></i>Publications
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row research-container">
-
-                        <!-- Publication 1 -->
-                        <div class="col-md-6 mb-4 research-item publications">
-                            <div class="research-card h-100 bg-secondary p-4"
-                                data-title="Is Systematic Data Sharding able to Stabilize Asynchronous Parameter Server Training?"
-                                data-authors="N. Provatas, I. Konstantinou, N. Koziris"
-                                data-venue="2021 IEEE International Conference on Big Data (Big Data)"
-                                data-abstract="Over the last years, deep learning has gained an increase in popularity in various domains introducing complex models to handle the data explosion. However, while such model architectures can support the enormous amount of data, a single computing node cannot train the model using the whole data set in a timely fashion. Thus, specialized distributed architectures have been proposed, most of which follow data parallelism schemes, as the widely used parameter server approach. In this setup, each worker contributes to the training process in an asynchronous manner. While asynchronous training does not suffer from synchronization overheads, it introduces the problem of stale gradients which might cause the model to diverge during the training process. In this paper, we examine different data assignment schemes to workers, which facilitate the asynchronous learning approach. Specifically, we propose two different algorithms to perform the data sharding. Our experimental evaluation indicated that when stratification is taken into account the validation results present up to 6X less variance compared to standard sharding creation. When further data exploration for hidden stratification is performed, validation metrics can be slightly optimized. This method also achieves to reduce the variance of training and validation metrics by up to 8X and 2X respectively."
-                                data-url="research/2021_systematic.pdf"
-                                data-bs-toggle="modal" data-bs-target="#researchModal" style="cursor:pointer;">
-                                <div class="d-flex align-items-start mb-3">
-                                    <img src="./assets/images/ntua.png" alt="NTUA" style="width:40px; height:40px; object-fit:contain;" class="me-3 flex-shrink-0">
-                                    <span class="badge bg-primary">Publication</span>
-                                </div>
-                                <h6 class="text-light mb-2">Is Systematic Data Sharding able to Stabilize Asynchronous Parameter Server Training?</h6>
-                                <p class="text-primary small mb-1">N. Provatas, I. Konstantinou, N. Koziris</p>
-                                <p class="text-light small mb-0 fst-italic">2021 IEEE International Conference on Big Data</p>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-calendar text-primary me-2"></i>
+                                <small class="text-light">June 01, 1993</small>
                             </div>
                         </div>
 
-                        <!-- Publication 2 -->
-                        <div class="col-md-6 mb-4 research-item publications">
-                            <div class="research-card h-100 bg-secondary p-4"
-                                data-title="Exploiting data distribution in distributed learning of deep classification models under the parameter server architecture."
-                                data-authors="N. Provatas"
-                                data-venue="2021 VLDB PhD Workshop"
-                                data-abstract="Nowadays, deep learning models are used in a wide range of applications, including classification and recognition tasks. The constant growth on the data size has led to the use of more complex model architectures for creating neural network classifiers. Both the model complexity and the amount of data usually prohibit the training on a single machine, due to time and memory limitations. Thus, distributed learning setups have been proposed to train deep networks, when a vast amount of data is available. One such common setup follows the parameter server approach, where worker tasks compute gradients to update the network stored in the servers, often in a synchronous free manner. However, the lack of synchronization may harm the resulting model quality due to the effect of stale gradients, which are computed based on older model versions. In this PhD research, we aim to explore how asynchronous learning could benefit from data preprocessing tasks revealing hidden traits regarding the data distribution."
-                                data-url="research/2021_vldb_workshop.pdf"
-                                data-bs-toggle="modal" data-bs-target="#researchModal" style="cursor:pointer;">
-                                <div class="d-flex align-items-start mb-3">
-                                    <img src="./assets/images/ntua.png" alt="NTUA" style="width:40px; height:40px; object-fit:contain;" class="me-3 flex-shrink-0">
-                                    <span class="badge bg-primary">Publication</span>
-                                </div>
-                                <h6 class="text-light mb-2">Exploiting data distribution in distributed learning of deep classification models under the parameter server architecture.</h6>
-                                <p class="text-primary small mb-1">N. Provatas</p>
-                                <p class="text-light small mb-0 fst-italic">2021 VLDB PhD Workshop</p>
-                            </div>
-                        </div>
-
-                        <!-- Publication 3 -->
-                        <div class="col-md-6 mb-4 research-item publications">
-                            <div class="research-card h-100 bg-secondary p-4"
-                                data-title="A Performance Evaluation of Distributed Deep Learning Frameworks on CPU Clusters Using Image Classification Workloads"
-                                data-authors="A. Krisilias, N. Provatas, N. Koziris, I. Konstantinou"
-                                data-venue="2021 IEEE International Conference on Big Data (Big Data)"
-                                data-abstract="Over the recent years, deep learning is widely being used in a variety of different fields and applications. The constant growth of data used to train complex models, has opened research in the distributed learning. In this domain, two main architectures are used to train models in a distribution fashion, allreduce and parameter server. Both support synchronous learning, while parameter server also supports asynchronous learning. These architectures are adopted by tech companies, which have developed multiple systems for this purpose. Among the most popular and widely used distributed deep learning systems are Google TensorFlow, Facebook PyTorch and Apache MXNet. In this paper, we quantify the performance gap between these systems and present a detailed analysis to discuss the parameters that affect their execution time. Overall, in synchronous learning setups, TensorFlow is slower compared to PyTorch by average 2.65X, while the latter lags MXNet by average 1.38X. Regarding asynchronous learning, MXNet is faster by average 3.22X in respect with TensorFlow."
-                                data-url="research/2021_bench_dl.pdf"
-                                data-bs-toggle="modal" data-bs-target="#researchModal" style="cursor:pointer;">
-                                <div class="d-flex align-items-start mb-3">
-                                    <img src="./assets/images/ntua.png" alt="NTUA" style="width:40px; height:40px; object-fit:contain;" class="me-3 flex-shrink-0">
-                                    <span class="badge bg-primary">Publication</span>
-                                </div>
-                                <h6 class="text-light mb-2">A Performance Evaluation of Distributed Deep Learning Frameworks on CPU Clusters Using Image Classification Workloads</h6>
-                                <p class="text-primary small mb-1">A. Krisilias, N. Provatas, N. Koziris, I. Konstantinou</p>
-                                <p class="text-light small mb-0 fst-italic">2021 IEEE International Conference on Big Data</p>
-                            </div>
-                        </div>
-
-                        <!-- Publication 4 -->
-                        <div class="col-md-6 mb-4 research-item publications">
-                            <div class="research-card h-100 bg-secondary p-4"
-                                data-title="Selis BDA: Big Data Analytics for the Logistics Domain"
-                                data-authors="N. Provatas, E. Kassela, N. Chalvantzis, A. Bakogiannis, I. Giannakopoulos, N. Koziris, I. Konstantinou"
-                                data-venue="2020 IEEE International Conference on Big Data (Big Data)"
-                                data-abstract="In this paper we present the SELIS Big Data Analytics and Machine Learning System (BDA), an open-source cloud-enabled elastic system that has been designed and implemented in order to address data related issues from the logistics domain. By taking into consideration real-life data analytics needs from more than 40 EU logistics providers we present the detailed SELIS BDA architecture along with the generic data and execution model devised to accommodate their diverse needs. We describe the main technologies we have utilized to realize the respective offering and justify our choices from the wider open-source Big Data systems community. We experimentally test our offering under various workloads where we prove that it can scale to serve a large number of concurrent requests while its abstraction/orchestration poses a very small overhead compared to the stand-alone Big Data systems. We believe that the SELIS BDA can be an easy-to-use entry point for the big data analytics world for any logistics company especially from the SME domain."
-                                data-url="research/2020_selis.pdf"
-                                data-bs-toggle="modal" data-bs-target="#researchModal" style="cursor:pointer;">
-                                <div class="d-flex align-items-start mb-3">
-                                    <img src="./assets/images/selis.png" alt="SELIS" style="width:40px; height:40px; object-fit:contain;" class="me-3 flex-shrink-0">
-                                    <span class="badge bg-primary">Publication</span>
-                                </div>
-                                <h6 class="text-light mb-2">Selis BDA: Big Data Analytics for the Logistics Domain</h6>
-                                <p class="text-primary small mb-1">N. Provatas, E. Kassela et al.</p>
-                                <p class="text-light small mb-0 fst-italic">2020 IEEE International Conference on Big Data</p>
-                            </div>
-                        </div>
-
-                        <!-- Publication 5 -->
-                        <div class="col-md-6 mb-4 research-item publications">
-                            <div class="research-card h-100 bg-secondary p-4"
-                                data-title="Towards Faster Distributed Deep Learning Using Data Hashing Techniques"
-                                data-authors="N. Provatas, I. Konstantinou, N. Koziris"
-                                data-venue="2019 IEEE International Conference on Big Data (Big Data)"
-                                data-abstract="Nowadays, deep learning is a crucial part of a variety of big data applications. Both the vast amount of data and the high complexity of the state-of-the-art neural networks have led to perform the network training in a distributed manner across clusters. Since synchronization overheads are usually fatal for the training's performance, asynchronous training is usually preferred in such cases. However, this training mode is sensitive to conflicting updates. Such updates most commonly occur when the workers train on a totally different part of the data. To reduce this phenomenon, in this paper, we propose the use of hashing schemes when distributing training data across workers."
-                                data-url="research/2019_towards_dl_hashing.pdf"
-                                data-bs-toggle="modal" data-bs-target="#researchModal" style="cursor:pointer;">
-                                <div class="d-flex align-items-start mb-3">
-                                    <img src="./assets/images/ntua.png" alt="NTUA" style="width:40px; height:40px; object-fit:contain;" class="me-3 flex-shrink-0">
-                                    <span class="badge bg-primary">Publication</span>
-                                </div>
-                                <h6 class="text-light mb-2">Towards Faster Distributed Deep Learning Using Data Hashing Techniques</h6>
-                                <p class="text-primary small mb-1">N. Provatas, I. Konstantinou, N. Koziris</p>
-                                <p class="text-light small mb-0 fst-italic">2019 IEEE International Conference on Big Data</p>
-                            </div>
-                        </div>
-
-                        <!-- Publication 6 -->
-                        <div class="col-md-6 mb-4 research-item publications">
-                            <div class="research-card h-100 bg-secondary p-4"
-                                data-title="General-purpose vs. Specialized Data Analytics Systems: A Game of ML & SQL Thrones"
-                                data-authors="E. Kassela, N. Provatas, I. Konstantinou, N. Koziris"
-                                data-venue="2019 IEEE International Conference on Big Data (Big Data)"
-                                data-abstract="Over the past decade, a plethora of systems have emerged to support data analytics in various domains such as SQL and machine learning, among others. In each of the data analysis domains, there are now many different specialized systems that leverage domain-specific optimizations to efficiently execute their workloads. An alternative approach is to build a general-purpose data analytics system that uses a common execution engine and programming model to support workloads in different domains. In this work, we choose representative systems of each class (Spark, TensorFlow, Presto and Hive) and benchmark their performance on a wide variety of machine learning and SQL workloads. We perform an extensive comparative analysis on the strengths and limitations of each system and highlight major areas for improvement for all systems. We believe that the major insights gained from this study will be useful for developers to improve the performance of these systems."
-                                data-url="research/2019_gam.pdf"
-                                data-bs-toggle="modal" data-bs-target="#researchModal" style="cursor:pointer;">
-                                <div class="d-flex align-items-start mb-3">
-                                    <img src="./assets/images/ntua.png" alt="NTUA" style="width:40px; height:40px; object-fit:contain;" class="me-3 flex-shrink-0">
-                                    <span class="badge bg-primary">Publication</span>
-                                </div>
-                                <h6 class="text-light mb-2">General-purpose vs. Specialized Data Analytics Systems: A Game of ML &amp; SQL Thrones</h6>
-                                <p class="text-primary small mb-1">E. Kassela, N. Provatas, I. Konstantinou, N. Koziris</p>
-                                <p class="text-light small mb-0 fst-italic">2019 IEEE International Conference on Big Data</p>
-                            </div>
-                        </div>
-
-                        <!-- Publication 7 -->
-                        <div class="col-md-6 mb-4 research-item publications">
-                            <div class="research-card h-100 bg-secondary p-4"
-                                data-title="BigOptiBase: Big Data Analytics for Base Station Energy Consumption Optimization"
-                                data-authors="E. Kassela, N. Provatas, I. Konstantinou, N. Koziris"
-                                data-venue="2019 IEEE International Conference on Big Data (Big Data)"
-                                data-abstract="Mobile Network Operators develop new technologies, as the 5G network, to handle the constantly increasing network traffic, while they put less effort on optimizing their operations. However, more energy efficient approaches are essential for cost reduction and compliance with energy footprint principles. Network usage and IoT data produced in the base stations can be used to develop such approaches. Considering the above, the BigOptiBase platform has been designed. Through this platform we will offer a big data analytics subsystem developed to provide elastic energy efficient solutions for the base stations using data analytics and machine learning technologies."
-                                data-url="research/2019_bigoptibase.pdf"
-                                data-bs-toggle="modal" data-bs-target="#researchModal" style="cursor:pointer;">
-                                <div class="d-flex align-items-start mb-3">
-                                    <img src="./assets/images/bigoptibase.png" alt="BigOptiBase" style="width:40px; height:40px; object-fit:contain;" class="me-3 flex-shrink-0">
-                                    <span class="badge bg-primary">Publication</span>
-                                </div>
-                                <h6 class="text-light mb-2">BigOptiBase: Big Data Analytics for Base Station Energy Consumption Optimization</h6>
-                                <p class="text-primary small mb-1">E. Kassela, N. Provatas, I. Konstantinou, N. Koziris</p>
-                                <p class="text-light small mb-0 fst-italic">2019 IEEE International Conference on Big Data</p>
-                            </div>
-                        </div>
-
-                        <!-- Thesis 1 -->
-                        <div class="col-md-6 mb-4 research-item thesis">
-                            <div class="research-card h-100 bg-secondary p-4"
-                                data-title="Techniques for Exploiting Data Distribution in Neural Network Training."
-                                data-authors="N. Provatas"
-                                data-venue="M.Sc. Thesis, NTUA, 2020"
-                                data-abstract="Deep learning is particularly flourishing in a context of different applications, such as image classification. In order to train better predictive models a plethora of complex neural networks architectures has been developed. However, network's complexity alone is not sufficient for the creation of high-precision models, which is directly linked to the quality and the data access pattern during training. A common practise to increase the accuracy of a model is to use a random batch of the data during the training instead of accessing them in a serial manner. In this diploma thesis, we examine the use of data distribution related techniques which will benefit the training process. Initially, we experiment with defining data access pattern according to their statistical distribution and produce validation metrics by up to 4.58%, without a significant time overhead. In addition, how data distribution can be utilized to perform the training process on a specific subset of the training set. Thus, we achieve the creation of equivalent predictive models in 1.2X times less time."
-                                data-url="research/diploma_dsml.pdf"
-                                data-bs-toggle="modal" data-bs-target="#researchModal" style="cursor:pointer;">
-                                <div class="d-flex align-items-start mb-3">
-                                    <img src="./assets/images/ntua.png" alt="NTUA" style="width:40px; height:40px; object-fit:contain;" class="me-3 flex-shrink-0">
-                                    <span class="badge bg-warning text-dark">Thesis</span>
-                                </div>
-                                <h6 class="text-light mb-2">Techniques for Exploiting Data Distribution in Neural Network Training.</h6>
-                                <p class="text-primary small mb-1">N. Provatas</p>
-                                <p class="text-light small mb-0 fst-italic">M.Sc. Thesis, 2020</p>
-                            </div>
-                        </div>
-
-                        <!-- Thesis 2 -->
-                        <div class="col-md-6 mb-4 research-item thesis">
-                            <div class="research-card h-100 bg-secondary p-4"
-                                data-title="Deterministic and Heuristic Algorithms for Designing and Optimizing Workflows on Multiple Machines on the Cloud."
-                                data-authors="N. Provatas"
-                                data-venue="M.Eng. Thesis, NTUA, 2016"
-                                data-abstract="Modern workflows have become extremely large and complex. Each task in the workflow might be able to execute in more than one execution engines. Therefore, a workflow has many different execution plans. From all different execution plans available for the workflow, it is crucial to locate the best plans according to some objectives. In this diploma thesis, a meta-planner is built, which target is to locate the best pareto solutions according to the time and cost objectives. At first, the planner reads the description of the workflow from an XML file and then attempts to find the appropriate execution plans in two ways, using models that describe the time and cost of executing each operator in any engine. The first way uses an optimal algorithm that guarantees the best solutions. The second is the approximate genetic algorithm NSGA-II. The target is the evaluation of the two methods, which showed that the size of the workflow really affects the performance of the two algorithms. Instead, the number of the available execution engines affects mostly the optimal algorithm. Moreover, there are cases that NSGA-II is much faster than the optimal (up to 152 times), which indicates its usage given the small distance of the solution sets. In the end, it is found that using the meta-planner can locate better execution plans according to an objective, instead of executing the whole workflow in the same execution engine."
-                                data-url="research/diploma_meng.pdf"
-                                data-bs-toggle="modal" data-bs-target="#researchModal" style="cursor:pointer;">
-                                <div class="d-flex align-items-start mb-3">
-                                    <img src="./assets/images/ntua.png" alt="NTUA" style="width:40px; height:40px; object-fit:contain;" class="me-3 flex-shrink-0">
-                                    <span class="badge bg-warning text-dark">Thesis</span>
-                                </div>
-                                <h6 class="text-light mb-2">Deterministic and Heuristic Algorithms for Designing and Optimizing Workflows on Multiple Machines on the Cloud.</h6>
-                                <p class="text-primary small mb-1">N. Provatas</p>
-                                <p class="text-light small mb-0 fst-italic">M.Eng. Thesis, 2016</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-                <!-- Research End -->
-
-                <!-- Contact Start -->
-                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="contact">
-                    <h1 class="title pb-3 mb-5">Contact</h1>
-                    <div class="row g-4 mb-4">
-                        <div class="col-md-6">
-                            <div class="bg-secondary p-4">
-                                <i class="bi bi-envelope fs-4 text-primary mb-3 d-block"></i>
-                                <h6 class="text-light mb-1">Email</h6>
-                                <p class="text-primary mb-0">nprov@cslab.ece.ntua.gr</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="bg-secondary p-4">
-                                <i class="bi bi-geo-alt fs-4 text-primary mb-3 d-block"></i>
-                                <h6 class="text-light mb-1">Location</h6>
-                                <p class="text-primary mb-0">School of Electrical and Computer Engineering, NTUA<br>Zografou, 157 73, Athens, Greece</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="map-container">
-                        <iframe
-                            src="https://maps.google.com/maps?width=100%25&height=400&hl=en&q=School%20of%20Electrical%20and%20Computer%20Engineering,%20Zografou%20157%2073&t=&z=14&ie=UTF8&iwloc=B&output=embed"
-                            width="100%" height="350" style="border:0;" loading="lazy" class="w-100"></iframe>
-                    </div>
-                </section>
-                <!-- Contact End -->
-
-                <!-- Footer Start -->
-                <section class="wow fadeIn" data-wow-delay="0.1s">
-                    <div class="bg-secondary text-light text-center p-5">
-                        <div class="d-flex justify-content-center mb-4">
-                            <a class="btn btn-dark btn-square mx-1" href="https://www.linkedin.com/in/nikodimos-provatas-490161123/" target="_blank">
+                        <div class="d-flex justify-content-center mt-auto mb-3">
+                            <a class="btn btn-secondary btn-square mx-1" href="https://www.linkedin.com/in/nikodimos-provatas-490161123/" target="_blank" title="LinkedIn">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
-                            <a class="btn btn-dark btn-square mx-1" href="https://scholar.google.com/citations?user=80Cef_oAAAAJ&hl=en" target="_blank">
+                            <a class="btn btn-secondary btn-square mx-1" href="https://scholar.google.com/citations?user=80Cef_oAAAAJ&hl=en" target="_blank" title="Google Scholar">
                                 <i class="ai ai-google-scholar"></i>
                             </a>
                         </div>
-                        <p class="m-0">© 2025 Nikodimos Provatas. All Rights Reserved.</p>
+                        <div class="d-flex align-items-end justify-content-between border-top">
+                            <a href="CV_Nikodimos_Provatas_Halon.pdf" class="btn w-100">Download CV</a>
+                        </div>
                     </div>
-                </section>
-                <!-- Footer End -->
+                </div>
+                <!-- ===== END SIDEBAR ===== -->
 
+                <div class="col-lg-8">
+
+                    <!-- ===== ABOUT ===== -->
+                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="title pb-3 mb-5">About Me</h1>
+                        <p>
+                            I am a machine learning and big data engineer at the Institute of Communication and
+                            Computing Systems (ICCS), located in the National Technical University of Athens (NTUA).
+                            I am also a PhD Candidate at the Computing Systems Laboratory (CSLab) of the School of
+                            Electrical and Computer Engineering NTUA. My research interests include big data,
+                            distributed systems, deep learning and data management.
+                        </p>
+                        <div class="row mb-4">
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Name:</span> Nikodimos Provatas
+                            </div>
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Birthday:</span> June 01, 1993
+                            </div>
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Degree:</span> M.Sc. Data Science &amp; ML / M.Eng. ECE
+                            </div>
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Experience:</span> 9+ Years
+                            </div>
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Email:</span> nprov@cslab.ece.ntua.gr
+                            </div>
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Location:</span> Athens, Greece
+                            </div>
+                        </div>
+
+                        <!-- Stats Counters -->
+                        <div class="row g-4 mb-5">
+                            <div class="col-md-4 col-lg-6 col-xl-4">
+                                <div class="d-flex bg-secondary p-4">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">9</h1>
+                                    <div class="ps-3">
+                                        <p class="mb-0">Years of</p>
+                                        <h5 class="mb-0">Experience</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-6 col-xl-4">
+                                <div class="d-flex bg-secondary p-4">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">7</h1>
+                                    <div class="ps-3">
+                                        <p class="mb-0">Research</p>
+                                        <h5 class="mb-0">Publications</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-6 col-xl-4">
+                                <div class="d-flex bg-secondary p-4">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">3</h1>
+                                    <div class="ps-3">
+                                        <p class="mb-0">EU/Greek</p>
+                                        <h5 class="mb-0">Projects</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Research Interests -->
+                        <h5 class="mb-4">Research Interests</h5>
+                        <div class="row g-3 mb-5">
+                            <div class="col-6 col-md-3">
+                                <div class="interest-box service-item text-center">
+                                    <img src="assets/images/icons8-big-data-50.png" alt="Big Data" width="40" class="mb-2">
+                                    <p class="mb-0 small">Big Data</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="interest-box service-item text-center">
+                                    <img src="assets/images/icons8-deep-learning-64.png" alt="Deep Learning" width="40" class="mb-2">
+                                    <p class="mb-0 small">Deep Learning</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="interest-box service-item text-center">
+                                    <img src="assets/images/icons8-distributed-60.png" alt="Distributed Systems" width="40" class="mb-2">
+                                    <p class="mb-0 small">Distributed Systems</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="interest-box service-item text-center">
+                                    <img src="assets/images/icons8-coding-64.png" alt="Software Engineering" width="40" class="mb-2">
+                                    <p class="mb-0 small">Software Engineering</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- EU Projects -->
+                        <h5 class="mb-4">European &amp; Greek Funded Projects</h5>
+                        <div class="d-flex flex-wrap align-items-center project-logos">
+                            <a href="http://www.datasource.gr/" target="_blank" class="me-4 mb-3">
+                                <img src="assets/images/datasource.png" alt="DataSource" class="project-logo">
+                            </a>
+                            <a href="http://www.bigoptibase.gr/" target="_blank" class="me-4 mb-3">
+                                <img src="assets/images/bigoptibase.png" alt="BigOptiBase" class="project-logo">
+                            </a>
+                            <a href="https://selisproject.eu/" target="_blank" class="me-4 mb-3">
+                                <img src="assets/images/selis.png" alt="SELIS" class="project-logo">
+                            </a>
+                        </div>
+                    </section>
+                    <!-- About End -->
+
+                    <!-- ===== SKILLS ===== -->
+                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="title pb-3 mb-5">Skills</h1>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h6 class="text-primary mb-3">Programming Languages</h6>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Python</p><p class="mb-2">100%</p>
+                                    </div>
+                                    <div class="progress"><div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Java</p><p class="mb-2">100%</p>
+                                    </div>
+                                    <div class="progress"><div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Bash</p><p class="mb-2">90%</p>
+                                    </div>
+                                    <div class="progress"><div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">R</p><p class="mb-2">80%</p>
+                                    </div>
+                                    <div class="progress"><div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                </div>
+                                <div class="skill mb-5">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">C / C++</p><p class="mb-2">70%</p>
+                                    </div>
+                                    <div class="progress"><div class="progress-bar bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                </div>
+
+                                <h6 class="text-primary mb-3">DevOps &amp; Tools</h6>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Git</p><p class="mb-2">100%</p>
+                                    </div>
+                                    <div class="progress"><div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Docker / Docker-Compose</p><p class="mb-2">90%</p>
+                                    </div>
+                                    <div class="progress"><div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Kubernetes</p><p class="mb-2">40%</p>
+                                    </div>
+                                    <div class="progress"><div class="progress-bar bg-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <h6 class="text-primary mb-3">ML / Python Libraries</h6>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">NumPy / Pandas / Dask</p><p class="mb-2">100%</p>
+                                    </div>
+                                    <div class="progress"><div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Scikit-Learn</p><p class="mb-2">100%</p>
+                                    </div>
+                                    <div class="progress"><div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">TensorFlow</p><p class="mb-2">90%</p>
+                                    </div>
+                                    <div class="progress"><div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Flask</p><p class="mb-2">80%</p>
+                                    </div>
+                                    <div class="progress"><div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                </div>
+                                <div class="skill mb-5">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">PyTorch</p><p class="mb-2">60%</p>
+                                    </div>
+                                    <div class="progress"><div class="progress-bar bg-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                </div>
+
+                                <h6 class="text-primary mb-3">Big Data &amp; Databases</h6>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Apache Spark (SQL/ML)</p><p class="mb-2">100%</p>
+                                    </div>
+                                    <div class="progress"><div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Apache HDFS</p><p class="mb-2">100%</p>
+                                    </div>
+                                    <div class="progress"><div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">PostgreSQL</p><p class="mb-2">100%</p>
+                                    </div>
+                                    <div class="progress"><div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Apache Superset</p><p class="mb-2">90%</p>
+                                    </div>
+                                    <div class="progress"><div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Skills End -->
+
+                    <!-- ===== EXPERIENCE ===== -->
+                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="title pb-3 mb-5">Experience</h1>
+                        <div class="border-start border-2 border-light pt-2 ps-5">
+                            <div class="position-relative mb-5">
+                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                <h5 class="mb-1">Big Data and Machine Learning Engineer</h5>
+                                <p class="mb-2">Institute of Communication and Computing Systems (ICCS), NTUA | <small>Oct. 2016 — Present</small></p>
+                                <p>Technologies: Apache Spark, HDFS, TensorFlow, Apache Superset, Docker, Docker-Compose.</p>
+                            </div>
+                            <div class="position-relative mb-4">
+                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                <h5 class="mb-1">Software Engineer Intern</h5>
+                                <p class="mb-2">Suntech | <small>May 2016 — July 2016</small></p>
+                                <p>C# Backend Software Engineer using MVC modelling.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Experience End -->
+
+                    <!-- ===== EDUCATION ===== -->
+                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="title pb-3 mb-5">Education</h1>
+                        <div class="border-start border-2 border-light pt-2 ps-5">
+                            <div class="position-relative mb-5">
+                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                <h5 class="mb-1">PhD Candidate, Computing Systems Laboratory</h5>
+                                <p class="mb-2">National Technical University of Athens | <small>2016 — Present</small></p>
+                                <p>Researching training neural networks with big data under asynchronous parameter server.</p>
+                            </div>
+                            <div class="position-relative mb-5">
+                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                <h5 class="mb-1">M.Sc. — Data Science and Machine Learning</h5>
+                                <p class="mb-2">National Technical University of Athens | <small>2018 — 2020</small></p>
+                                <p class="mb-1"><strong>Grade:</strong> 9.44/10</p>
+                                <p class="mb-1"><strong>Thesis:</strong> Techniques for exploiting data distribution in neural network training.</p>
+                                <a class="text-primary" href="https://dspace.lib.ntua.gr/xmlui/bitstream/handle/123456789/52744/main.pdf?sequence=1&isAllowed=y" target="_blank">
+                                    Download in Greek <i class="fas fa-file-pdf ms-1"></i>
+                                </a>
+                            </div>
+                            <div class="position-relative mb-4">
+                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                <h5 class="mb-1">M.Eng. — Electrical and Computer Engineering</h5>
+                                <p class="mb-2">National Technical University of Athens | <small>2011 — 2016</small></p>
+                                <p class="mb-1"><strong>Grade:</strong> 8.78/10</p>
+                                <p class="mb-1"><strong>Thesis:</strong> Deterministic and heuristic algorithms for designing and optimizing workflows on multiple machines on the cloud.</p>
+                                <a class="text-primary" href="https://dspace.lib.ntua.gr/xmlui/bitstream/handle/123456789/52744/main.pdf?sequence=1&isAllowed=y" target="_blank">
+                                    Download in Greek <i class="fas fa-file-pdf ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Education End -->
+
+                    <!-- ===== RESEARCH ===== -->
+                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="title pb-3 mb-5">Research</h1>
+                        <div class="row">
+                            <div class="col-12 text-center mb-2">
+                                <ul class="list-inline mb-4" id="research-filters">
+                                    <li class="btn btn-secondary active me-1 mb-2" data-filter="*">
+                                        <i class="fa fa-star me-2"></i>All
+                                    </li>
+                                    <li class="btn btn-secondary me-1 mb-2" data-filter=".thesis">
+                                        <i class="fa fa-graduation-cap me-2"></i>Thesis
+                                    </li>
+                                    <li class="btn btn-secondary mb-2" data-filter=".publications">
+                                        <i class="fa fa-file-alt me-2"></i>Publications
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row research-container">
+
+                            <!-- Publication 1 -->
+                            <div class="col-md-6 mb-4 research-item publications">
+                                <div class="research-card p-4 bg-secondary h-100"
+                                    data-toggle="modal" data-target="#researchModal"
+                                    data-title="Is Systematic Data Sharding able to Stabilize Asynchronous Parameter Server Training?"
+                                    data-authors="N. Provatas, I. Konstantinou, N. Koziris"
+                                    data-venue="2021 IEEE International Conference on Big Data (Big Data)"
+                                    data-abstract="Over the last years, deep learning has gained an increase in popularity in various domains introducing complex models to handle the data explosion. However, while such model architectures can support the enormous amount of data, a single computing node cannot train the model using the whole data set in a timely fashion. Thus, specialized distributed architectures have been proposed, most of which follow data parallelism schemes, as the widely used parameter server approach. In this setup, each worker contributes to the training process in an asynchronous manner. While asynchronous training does not suffer from synchronization overheads, it introduces the problem of stale gradients which might cause the model to diverge during the training process. In this paper, we examine different data assignment schemes to workers, which facilitate the asynchronous learning approach. Specifically, we propose two different algorithms to perform the data sharding. Our experimental evaluation indicated that when stratification is taken into account the validation results present up to 6X less variance compared to standard sharding creation. When further data exploration for hidden stratification is performed, validation metrics can be slightly optimized. This method also achieves to reduce the variance of training and validation metrics by up to 8X and 2X respectively."
+                                    data-url="research/2021_systematic.pdf">
+                                    <div class="d-flex align-items-start mb-2">
+                                        <img src="assets/images/ntua.png" alt="NTUA" class="research-logo me-2">
+                                        <span class="badge badge-primary">Publication</span>
+                                    </div>
+                                    <h6 class="mb-2">Is Systematic Data Sharding able to Stabilize Asynchronous Parameter Server Training?</h6>
+                                    <p class="text-primary small mb-1">N. Provatas, I. Konstantinou, N. Koziris</p>
+                                    <p class="small mb-0"><em>2021 IEEE International Conference on Big Data</em></p>
+                                </div>
+                            </div>
+
+                            <!-- Publication 2 -->
+                            <div class="col-md-6 mb-4 research-item publications">
+                                <div class="research-card p-4 bg-secondary h-100"
+                                    data-toggle="modal" data-target="#researchModal"
+                                    data-title="Exploiting data distribution in distributed learning of deep classification models under the parameter server architecture."
+                                    data-authors="N. Provatas"
+                                    data-venue="2021 VLDB PhD Workshop"
+                                    data-abstract="Nowadays, deep learning models are used in a wide range of applications, including classification and recognition tasks. The constant growth on the data size has led to the use of more complex model architectures for creating neural network classifiers. Both the model complexity and the amount of data usually prohibit the training on a single machine, due to time and memory limitations. Thus, distributed learning setups have been proposed to train deep networks, when a vast amount of data is available. One such common setup follows the parameter server approach, where worker tasks compute gradients to update the network stored in the servers, often in a synchronous free manner. However, the lack of synchronization may harm the resulting model quality due to the effect of stale gradients, which are computed based on older model versions. In this PhD research, we aim to explore how asynchronous learning could benefit from data preprocessing tasks revealing hidden traits regarding the data distribution."
+                                    data-url="research/2021_vldb_workshop.pdf">
+                                    <div class="d-flex align-items-start mb-2">
+                                        <img src="assets/images/ntua.png" alt="NTUA" class="research-logo me-2">
+                                        <span class="badge badge-primary">Publication</span>
+                                    </div>
+                                    <h6 class="mb-2">Exploiting data distribution in distributed learning of deep classification models under the parameter server architecture.</h6>
+                                    <p class="text-primary small mb-1">N. Provatas</p>
+                                    <p class="small mb-0"><em>2021 VLDB PhD Workshop</em></p>
+                                </div>
+                            </div>
+
+                            <!-- Publication 3 -->
+                            <div class="col-md-6 mb-4 research-item publications">
+                                <div class="research-card p-4 bg-secondary h-100"
+                                    data-toggle="modal" data-target="#researchModal"
+                                    data-title="A Performance Evaluation of Distributed Deep Learning Frameworks on CPU Clusters Using Image Classification Workloads"
+                                    data-authors="A. Krisilias, N. Provatas, N. Koziris, I. Konstantinou"
+                                    data-venue="2021 IEEE International Conference on Big Data (Big Data)"
+                                    data-abstract="Over the recent years, deep learning is widely being used in a variety of different fields and applications. The constant growth of data used to train complex models, has opened research in the distributed learning. In this domain, two main architectures are used to train models in a distribution fashion, allreduce and parameter server. Both support synchronous learning, while parameter server also supports asynchronous learning. These architectures are adopted by tech companies, which have developed multiple systems for this purpose. Among the most popular and widely used distributed deep learning systems are Google TensorFlow, Facebook PyTorch and Apache MXNet. In this paper, we quantify the performance gap between these systems and present a detailed analysis to discuss the parameters that affect their execution time. Overall, in synchronous learning setups, TensorFlow is slower compared to PyTorch by average 2.65X, while the latter lags MXNet by average 1.38X. Regarding asynchronous learning, MXNet is faster by average 3.22X in respect with TensorFlow."
+                                    data-url="research/2021_bench_dl.pdf">
+                                    <div class="d-flex align-items-start mb-2">
+                                        <img src="assets/images/ntua.png" alt="NTUA" class="research-logo me-2">
+                                        <span class="badge badge-primary">Publication</span>
+                                    </div>
+                                    <h6 class="mb-2">A Performance Evaluation of Distributed Deep Learning Frameworks on CPU Clusters Using Image Classification Workloads</h6>
+                                    <p class="text-primary small mb-1">A. Krisilias, N. Provatas, N. Koziris, I. Konstantinou</p>
+                                    <p class="small mb-0"><em>2021 IEEE International Conference on Big Data</em></p>
+                                </div>
+                            </div>
+
+                            <!-- Publication 4 -->
+                            <div class="col-md-6 mb-4 research-item publications">
+                                <div class="research-card p-4 bg-secondary h-100"
+                                    data-toggle="modal" data-target="#researchModal"
+                                    data-title="Selis BDA: Big Data Analytics for the Logistics Domain"
+                                    data-authors="N. Provatas, E. Kassela, N. Chalvantzis, A. Bakogiannis, I. Giannakopoulos, N. Koziris, I. Konstantinou"
+                                    data-venue="2020 IEEE International Conference on Big Data (Big Data)"
+                                    data-abstract="In this paper we present the SELIS Big Data Analytics and Machine Learning System (BDA), an open-source cloud-enabled elastic system that has been designed and implemented in order to address data related issues from the logistics domain. By taking into consideration real-life data analytics needs from more than 40 EU logistics providers we present the detailed SELIS BDA architecture along with the generic data and execution model devised to accommodate their diverse needs. We describe the main technologies we have utilized to realize the respective offering and justify our choices from the wider open-source Big Data systems community. We experimentally test our offering under various workloads where we prove that it can scale to serve a large number of concurrent requests while its abstraction/orchestration poses a very small overhead compared to the stand-alone Big Data systems."
+                                    data-url="research/2020_selis.pdf">
+                                    <div class="d-flex align-items-start mb-2">
+                                        <img src="assets/images/selis.png" alt="SELIS" class="research-logo me-2">
+                                        <span class="badge badge-primary">Publication</span>
+                                    </div>
+                                    <h6 class="mb-2">Selis BDA: Big Data Analytics for the Logistics Domain</h6>
+                                    <p class="text-primary small mb-1">N. Provatas, E. Kassela et al.</p>
+                                    <p class="small mb-0"><em>2020 IEEE International Conference on Big Data</em></p>
+                                </div>
+                            </div>
+
+                            <!-- Publication 5 -->
+                            <div class="col-md-6 mb-4 research-item publications">
+                                <div class="research-card p-4 bg-secondary h-100"
+                                    data-toggle="modal" data-target="#researchModal"
+                                    data-title="Towards Faster Distributed Deep Learning Using Data Hashing Techniques"
+                                    data-authors="N. Provatas, I. Konstantinou, N. Koziris"
+                                    data-venue="2019 IEEE International Conference on Big Data (Big Data)"
+                                    data-abstract="Nowadays, deep learning is a crucial part of a variety of big data applications. Both the vast amount of data and the high complexity of the state-of-the-art neural networks have led to perform the network training in a distributed manner across clusters. Since synchronization overheads are usually fatal for the training's performance, asynchronous training is usually preferred in such cases. However, this training mode is sensitive to conflicting updates. Such updates most commonly occur when the workers train on a totally different part of the data. To reduce this phenomenon, in this paper, we propose the use of hashing schemes when distributing training data across workers."
+                                    data-url="research/2019_towards_dl_hashing.pdf">
+                                    <div class="d-flex align-items-start mb-2">
+                                        <img src="assets/images/ntua.png" alt="NTUA" class="research-logo me-2">
+                                        <span class="badge badge-primary">Publication</span>
+                                    </div>
+                                    <h6 class="mb-2">Towards Faster Distributed Deep Learning Using Data Hashing Techniques</h6>
+                                    <p class="text-primary small mb-1">N. Provatas, I. Konstantinou, N. Koziris</p>
+                                    <p class="small mb-0"><em>2019 IEEE International Conference on Big Data</em></p>
+                                </div>
+                            </div>
+
+                            <!-- Publication 6 -->
+                            <div class="col-md-6 mb-4 research-item publications">
+                                <div class="research-card p-4 bg-secondary h-100"
+                                    data-toggle="modal" data-target="#researchModal"
+                                    data-title="General-purpose vs. Specialized Data Analytics Systems: A Game of ML & SQL Thrones"
+                                    data-authors="E. Kassela, N. Provatas, I. Konstantinou, N. Koziris"
+                                    data-venue="2019 IEEE International Conference on Big Data (Big Data)"
+                                    data-abstract="Over the past decade, a plethora of systems have emerged to support data analytics in various domains such as SQL and machine learning, among others. In each of the data analysis domains, there are now many different specialized systems that leverage domain-specific optimizations to efficiently execute their workloads. An alternative approach is to build a general-purpose data analytics system that uses a common execution engine and programming model to support workloads in different domains. In this work, we choose representative systems of each class (Spark, TensorFlow, Presto and Hive) and benchmark their performance on a wide variety of machine learning and SQL workloads. We perform an extensive comparative analysis on the strengths and limitations of each system and highlight major areas for improvement for all systems."
+                                    data-url="research/2019_gam.pdf">
+                                    <div class="d-flex align-items-start mb-2">
+                                        <img src="assets/images/ntua.png" alt="NTUA" class="research-logo me-2">
+                                        <span class="badge badge-primary">Publication</span>
+                                    </div>
+                                    <h6 class="mb-2">General-purpose vs. Specialized Data Analytics Systems: A Game of ML &amp; SQL Thrones</h6>
+                                    <p class="text-primary small mb-1">E. Kassela, N. Provatas, I. Konstantinou, N. Koziris</p>
+                                    <p class="small mb-0"><em>2019 IEEE International Conference on Big Data</em></p>
+                                </div>
+                            </div>
+
+                            <!-- Publication 7 -->
+                            <div class="col-md-6 mb-4 research-item publications">
+                                <div class="research-card p-4 bg-secondary h-100"
+                                    data-toggle="modal" data-target="#researchModal"
+                                    data-title="BigOptiBase: Big Data Analytics for Base Station Energy Consumption Optimization"
+                                    data-authors="E. Kassela, N. Provatas, I. Konstantinou, N. Koziris"
+                                    data-venue="2019 IEEE International Conference on Big Data (Big Data)"
+                                    data-abstract="Mobile Network Operators develop new technologies, as the 5G network, to handle the constantly increasing network traffic, while they put less effort on optimizing their operations. However, more energy efficient approaches are essential for cost reduction and compliance with energy footprint principles. Network usage and IoT data produced in the base stations can be used to develop such approaches. Considering the above, the BigOptiBase platform has been designed. Through this platform we will offer a big data analytics subsystem developed to provide elastic energy efficient solutions for the base stations using data analytics and machine learning technologies."
+                                    data-url="research/2019_bigoptibase.pdf">
+                                    <div class="d-flex align-items-start mb-2">
+                                        <img src="assets/images/bigoptibase.png" alt="BigOptiBase" class="research-logo me-2">
+                                        <span class="badge badge-primary">Publication</span>
+                                    </div>
+                                    <h6 class="mb-2">BigOptiBase: Big Data Analytics for Base Station Energy Consumption Optimization</h6>
+                                    <p class="text-primary small mb-1">E. Kassela, N. Provatas, I. Konstantinou, N. Koziris</p>
+                                    <p class="small mb-0"><em>2019 IEEE International Conference on Big Data</em></p>
+                                </div>
+                            </div>
+
+                            <!-- Thesis 1 -->
+                            <div class="col-md-6 mb-4 research-item thesis">
+                                <div class="research-card p-4 bg-secondary h-100"
+                                    data-toggle="modal" data-target="#researchModal"
+                                    data-title="Techniques for Exploiting Data Distribution in Neural Network Training."
+                                    data-authors="N. Provatas"
+                                    data-venue="M.Sc. Thesis, NTUA, 2020"
+                                    data-abstract="Deep learning is particularly flourishing in a context of different applications, such as image classification. In order to train better predictive models a plethora of complex neural networks architectures has been developed. However, network's complexity alone is not sufficient for the creation of high-precision models, which is directly linked to the quality and the data access pattern during training. A common practise to increase the accuracy of a model is to use a random batch of the data during the training instead of accessing them in a serial manner. In this diploma thesis, we examine the use of data distribution related techniques which will benefit the training process. Initially, we experiment with defining data access pattern according to their statistical distribution and produce validation metrics by up to 4.58%, without a significant time overhead. In addition, how data distribution can be utilized to perform the training process on a specific subset of the training set. Thus, we achieve the creation of equivalent predictive models in 1.2X times less time."
+                                    data-url="research/diploma_dsml.pdf">
+                                    <div class="d-flex align-items-start mb-2">
+                                        <img src="assets/images/ntua.png" alt="NTUA" class="research-logo me-2">
+                                        <span class="badge badge-warning">Thesis</span>
+                                    </div>
+                                    <h6 class="mb-2">Techniques for Exploiting Data Distribution in Neural Network Training.</h6>
+                                    <p class="text-primary small mb-1">N. Provatas</p>
+                                    <p class="small mb-0"><em>M.Sc. Thesis, 2020</em></p>
+                                </div>
+                            </div>
+
+                            <!-- Thesis 2 -->
+                            <div class="col-md-6 mb-4 research-item thesis">
+                                <div class="research-card p-4 bg-secondary h-100"
+                                    data-toggle="modal" data-target="#researchModal"
+                                    data-title="Deterministic and Heuristic Algorithms for Designing and Optimizing Workflows on Multiple Machines on the Cloud."
+                                    data-authors="N. Provatas"
+                                    data-venue="M.Eng. Thesis, NTUA, 2016"
+                                    data-abstract="Modern workflows have become extremely large and complex. Each task in the workflow might be able to execute in more than one execution engines. Therefore, a workflow has many different execution plans. From all different execution plans available for the workflow, it is crucial to locate the best plans according to some objectives. In this diploma thesis, a meta-planner is built, which target is to locate the best pareto solutions according to the time and cost objectives. At first, the planner reads the description of the workflow from an XML file and then attempts to find the appropriate execution plans in two ways, using models that describe the time and cost of executing each operator in any engine. The first way uses an optimal algorithm that guarantees the best solutions. The second is the approximate genetic algorithm NSGA-II. The target is the evaluation of the two methods, which showed that the size of the workflow really affects the performance of the two algorithms. Instead, the number of the available execution engines affects mostly the optimal algorithm. Moreover, there are cases that NSGA-II is much faster than the optimal (up to 152 times), which indicates its usage given the small distance of the solution sets."
+                                    data-url="research/diploma_meng.pdf">
+                                    <div class="d-flex align-items-start mb-2">
+                                        <img src="assets/images/ntua.png" alt="NTUA" class="research-logo me-2">
+                                        <span class="badge badge-warning">Thesis</span>
+                                    </div>
+                                    <h6 class="mb-2">Deterministic and Heuristic Algorithms for Designing and Optimizing Workflows on Multiple Machines on the Cloud.</h6>
+                                    <p class="text-primary small mb-1">N. Provatas</p>
+                                    <p class="small mb-0"><em>M.Eng. Thesis, 2016</em></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <!-- Research End -->
+
+                    <!-- ===== CONTACT ===== -->
+                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="contact">
+                        <h1 class="title pb-3 mb-5">Contact</h1>
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <div class="bg-secondary p-4 h-100">
+                                    <i class="bi bi-envelope fs-3 text-primary mb-3 d-block"></i>
+                                    <h6 class="mb-1">Email</h6>
+                                    <p class="text-primary mb-0">nprov@cslab.ece.ntua.gr</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-secondary p-4 h-100">
+                                    <i class="bi bi-geo-alt fs-3 text-primary mb-3 d-block"></i>
+                                    <h6 class="mb-1">Location</h6>
+                                    <p class="text-primary mb-0">School of ECE, NTUA<br>Zografou 157 73, Athens, Greece</p>
+                                </div>
+                            </div>
+                        </div>
+                        <iframe
+                            src="https://maps.google.com/maps?width=100%25&height=400&hl=en&q=School%20of%20Electrical%20and%20Computer%20Engineering,%20Zografou%20157%2073&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+                            width="100%" height="320" style="border:0;" loading="lazy" class="w-100"></iframe>
+                    </section>
+                    <!-- Contact End -->
+
+                    <!-- ===== FOOTER ===== -->
+                    <section class="wow fadeIn" data-wow-delay="0.1s">
+                        <div class="bg-secondary text-light text-center p-5">
+                            <div class="d-flex justify-content-center mb-4">
+                                <a class="btn btn-dark btn-square mx-1" href="https://www.linkedin.com/in/nikodimos-provatas-490161123/" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a class="btn btn-dark btn-square mx-1" href="https://scholar.google.com/citations?user=80Cef_oAAAAJ&hl=en" target="_blank">
+                                    <i class="ai ai-google-scholar"></i>
+                                </a>
+                            </div>
+                            <p class="m-0">&copy; 2025 Nikodimos Provatas. All Rights Reserved.</p>
+                        </div>
+                    </section>
+                    <!-- Footer End -->
+
+                </div>
             </div>
-            <!-- Main Content End -->
-
         </div>
-    </div>
 
-    <!-- Research Modal -->
-    <div class="modal fade" id="researchModal" tabindex="-1" aria-labelledby="researchModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable">
-            <div class="modal-content bg-dark text-light">
-                <div class="modal-header border-secondary">
-                    <h5 class="modal-title text-primary" id="researchModalLabel"></h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="text-primary mb-1" id="modal-authors"></p>
-                    <p class="text-light fst-italic mb-3" id="modal-venue"></p>
-                    <p class="text-light" id="modal-abstract"></p>
-                </div>
-                <div class="modal-footer border-secondary">
-                    <a id="modal-download" href="#" target="_blank" class="btn btn-primary">
-                        Download PDF <i class="fas fa-file-pdf ms-1"></i>
-                    </a>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+        <!-- Research Modal (Bootstrap 4) -->
+        <div class="modal fade" id="researchModal" tabindex="-1" role="dialog" aria-labelledby="researchModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                <div class="modal-content" style="background-color:#2C3E50; color:#F2F2F2; border:1px solid #314355;">
+                    <div class="modal-header" style="background-color:#314355; border-bottom:1px solid #415566;">
+                        <h5 class="modal-title text-primary" id="researchModalLabel"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:#F2F2F2;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-primary mb-1" id="modal-authors"></p>
+                        <p class="mb-3" id="modal-venue" style="font-style:italic;"></p>
+                        <p id="modal-abstract"></p>
+                    </div>
+                    <div class="modal-footer" style="border-top:1px solid #415566;">
+                        <a id="modal-download" href="#" target="_blank" class="btn btn-primary">
+                            Download PDF <i class="fas fa-file-pdf ml-1"></i>
+                        </a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Back to Top -->
-    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="DarkCV/lib/wow/wow.min.js"></script>
+        <script src="DarkCV/lib/typed/typed.min.js"></script>
+        <script src="DarkCV/lib/easing/easing.min.js"></script>
+        <script src="DarkCV/lib/waypoints/waypoints.min.js"></script>
+        <script src="DarkCV/lib/counterup/counterup.min.js"></script>
+        <script src="DarkCV/lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="DarkCV/lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="DarkCV/lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+        <!-- Template JS (unchanged) -->
+        <script src="DarkCV/js/main.js"></script>
 
-    <!-- Custom JS -->
-    <script src="./assets/js/script.js"></script>
-
-</body>
-
+        <!-- Research section JS -->
+        <script src="assets/js/research.js"></script>
+    </body>
 </html>
