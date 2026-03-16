@@ -12,13 +12,35 @@
 
 /* EU project logos */
 .project-logo {
-    height: 45px;
+    height: 60px;
     object-fit: contain;
-    filter: brightness(0.9);
+    filter: brightness(0.85);
     transition: filter 0.3s;
 }
 .project-logo:hover {
-    filter: brightness(1.15);
+    filter: brightness(1.2);
+}
+
+/* Projects carousel */
+.project-carousel-item {
+    background-color: var(--secondary);
+    border-radius: 4px;
+    padding: 28px 20px;
+    transition: transform 0.3s ease;
+}
+.project-carousel-item:hover {
+    transform: translateY(-4px);
+}
+.project-carousel .owl-dots {
+    margin-top: 20px;
+    text-align: center;
+}
+.project-carousel .owl-dot span {
+    background: var(--secondary) !important;
+    border: 2px solid var(--primary) !important;
+}
+.project-carousel .owl-dot.active span {
+    background: var(--primary) !important;
 }
 
 /* Research cards */
